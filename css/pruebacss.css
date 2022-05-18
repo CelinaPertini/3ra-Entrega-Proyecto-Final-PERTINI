@@ -7,7 +7,7 @@ body {
   font-family: 'Poppins', sans-serif; }
 
 header {
-  height: 250px;
+  height: 150px;
   background-color: #f8edd3;
   display: flex;
   flex-wrap: wrap;
@@ -17,26 +17,26 @@ header {
 
 .tituloPrincipal {
   color: #85586F;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bolder;
   text-align: center;
   display: none; }
 
 .logo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   animation-name: movimiento-1;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-delay: .5s;
-  animation-duration: 3s; }
+  animation-duration: 4s; }
 
 @keyframes movimiento-1 {
   25% {
-    transform: rotate(360deg) scale(1.4, 1.4); } }
+    transform: rotate(360deg) scale(1.1, 1.1); } }
 
 #hero {
-  height: 90vh;
+  height: 70vh;
   background-image: url(../assets/hero4.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,7 +47,7 @@ header {
 
 #hero .banner {
   color: #AC7D88;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
   font-weight: bolder;
   -webkit-text-stroke: 2.5px black; }
@@ -124,10 +124,17 @@ fieldset {
   align-items: center; }
 
 label {
-  padding: 20px; }
+  padding: 10px; }
 
 input {
-  margin: 20px; }
+  margin: 10px; }
+
+.faq h3 {
+  font-weight: bolder;
+  font-size: 20px; }
+
+.faq p {
+  font-size: 15px; }
 
 /* Seccion Grid Inicio */
 .contenedor {
@@ -172,7 +179,15 @@ input {
 
 /* comienza uso de media queries */
 @media screen and (min-width: 768px) {
+  .logo {
+    width: 200px;
+    height: 200px; }
+  #hero {
+    height: 90vh; }
+  #hero .banner {
+    font-size: 70px; }
   header {
+    height: 250px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
@@ -180,7 +195,12 @@ input {
     display: inline-block; }
   .prodDestacados {
     grid-template-areas: "uno dos tres";
-    grid-gap: 40px; } }
+    grid-gap: 40px; }
+  .faq h3 {
+    font-weight: bolder;
+    font-size: 30px; }
+  .faq p {
+    font-size: 20px; } }
 
 .producto-uno {
   color: blue;
